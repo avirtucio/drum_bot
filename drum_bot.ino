@@ -68,12 +68,12 @@ void setup() {
 
 void loop() {
   // 141 measures in song
-  for (int measure=-1; measure<142; measure++){
-    if (measure==-1){
+  for (int measure=0; measure<142; measure++){
+    if (measure==-0){
       currentBassPattern = countdownBass;
       currentSnarePattern = countdownSnare; 
       currentCymbalPattern = countdownCymbal;
-    } else if (measure==0){
+    } else if (measure==1){
       currentBassPattern = restBass;
       currentSnarePattern = restSnare; 
       currentCymbalPattern = restCymbal;
